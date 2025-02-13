@@ -95,9 +95,9 @@ export default function Team() {
                 <div className="team-members">
                     <div className="team-card">
                         <h3>
-                            *** - 科学顾问
+                            敬请期待 - 科学顾问
                         </h3>
-                        <p>清华大学人工智能安全副教授，TSAIL 研究团队核心成员</p>
+                        <p>清华大学人工智能安全教授</p>
                         <p><strong>职责：</strong> 提供前沿 AI 安全研究指导，推动科研项目与专利布局</p>
                     </div>
 
