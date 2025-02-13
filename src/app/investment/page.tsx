@@ -51,8 +51,8 @@ export default function Investment() {
                     <tbody>
                     <tr>
                         <td>天使轮</td>
-                        <td>$30 万美元</td>
-                        <td>股权 7%</td>
+                        <td>$100 万美元</td>
+                        <td>股权 14%</td>
                     </tr>
                     <tr>
                         <td>Pre-A 轮</td>
