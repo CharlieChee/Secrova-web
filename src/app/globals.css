@@ -1,0 +1,546 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1b1c1f;
+  padding: 10px 20px;
+}
+
+.navbar .logo img {
+  max-width: 180px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+}
+
+.navbar ul li {
+  display: inline;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+/* Hover effect */
+.nav-links li a:hover {
+  color: #f4a261; /* Orange hover effect */
+}
+
+/* Active link styling */
+.nav-links li a.active {
+  color: #f4a261; /* Orange color for active link */
+  border-bottom: 2px solid #f4a261; /* Underline to highlight */
+  padding-bottom: 3px;
+}
+
+.header {
+  background: #000;
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+  text-align: center;
+}
+
+main {
+  padding: 40px;
+}
+
+h1 {
+  color: #333;
+}
+
+/* Home Page Styles */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 72vh; /* Make the section take most of the viewport */
+  text-align: center;
+  background: linear-gradient(180deg, #1b1c1f, #282a36); /* Dark gradient background */
+  color: white;
+}
+
+/* Hero Title Styling */
+.hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  background: linear-gradient(to right, #f4a261, #e76f51); /* Gradient text */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Highlight Secrova */
+.highlight {
+  color: #f4a261;
+}
+
+/* Subtext Styling */
+.subtext {
+  font-size: 1.5rem;
+  font-weight: 400;
+  max-width: 60%;
+  line-height: 1.6;
+  color: #f8f9fa;
+  animation: fadeInUp 1.5s ease-in-out;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Fade In Up Animation */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Business Page 样式 */
+.business-container {
+  text-align: center;
+  padding: 60px;
+  background: linear-gradient(180deg, #1b1c1f, #282a36);
+  color: white;
+}
+
+/* 标题 */
+.business-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: white;
+  -webkit-text-stroke: 1px #f4a261;
+}
+
+/* 业务介绍 */
+.business-description {
+  font-size: 1.4rem;
+  max-width: 80%;
+  margin: auto;
+  line-height: 1.8;
+  color: #f8f9fa;
+}
+
+/* 业务板块 */
+.business-sectors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+/* 业务卡片 */
+.sector-card {
+  display: flex;
+  flex-direction: column; /* 让子元素垂直排列 */
+  align-items: center;  /* 让所有子元素居中 */
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 12px;
+  width: 280px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.sector-card:hover {
+  transform: scale(1.05);
+}
+
+.sector-card h2 {
+  font-size: 1.5rem;
+  margin: 15px 0;
+  color: #f4a261;
+}
+
+.sector-card p {
+  font-size: 1rem;
+  color: #dcdcdc;
+}
+
+/* 业务图标 */
+.sector-icon {
+  width: 80px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+/* 技术页面整体布局 */
+.technology-container {
+  text-align: center;
+  padding: 60px;
+  background: linear-gradient(180deg, #1b1c1f, #282a36);
+  color: white;
+}
+
+/* 标题 */
+.technology-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #f4a261;
+}
+
+/* 描述 */
+.technology-description {
+  font-size: 1.4rem;
+  max-width: 80%;
+  margin: auto;
+  line-height: 1.8;
+  color: #f8f9fa;
+}
+
+/* 技术板块整体布局 */
+.technology-sectors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+/* 技术卡片 */
+.tech-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 12px;
+  width: 320px;
+  text-align: left;  /* 左对齐 */
+  transition: transform 0.3s ease-in-out;
+}
+
+.tech-card:hover {
+  transform: scale(1.05);
+}
+
+/* 让图标和标题在同一行 */
+.tech-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* 技术图标放在左侧 */
+.tech-icon {
+  width: 50px;
+  height: 50px;
+}
+
+/* 技术标题 */
+.tech-header h2 {
+  font-size: 1.4rem;
+  margin: 0;
+  color: #f4a261;
+}
+
+/* 让描述文本位于图标和标题下方 */
+.tech-card p {
+  font-size: 1rem;
+  color: #dcdcdc;
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+
+/* 技术优势 */
+.tech-advantage {
+  margin-top: 60px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.tech-advantage h2 {
+  font-size: 2rem;
+  color: #f4a261;
+}
+
+.advantage-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.advantage-list li {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #ffffff;
+}
+
+/* 投资页面整体布局 */
+.investment-container {
+  text-align: center;
+  padding: 60px;
+  background: linear-gradient(180deg, #1b1c1f, #282a36);
+  color: white;
+}
+
+/* 标题 */
+.investment-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #f4a261;
+}
+
+/* 描述 */
+.investment-description {
+  font-size: 1.4rem;
+  max-width: 70%;
+  margin: auto;
+  line-height: 1.8;
+  color: #f8f9fa;
+}
+
+/* 市场数据部分 */
+.investment-stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+/* 统计卡片 */
+.stat-card {
+  display: flex;
+  align-items: center; /* 让图标和内容垂直居中 */
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 12px;
+  width: 400px;
+  text-align: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.stat-card:hover {
+  transform: scale(1.05);
+}
+
+/* 统计图标 */
+.stat-icon {
+  width: 80px;
+  height: 80px;
+  margin-right: 15px; /* 在图标和文本之间留间距 */
+}
+
+/* 统计内容 */
+.stat-content {
+  flex: 1; /* 让文本部分填充剩余空间 */
+}
+
+.stat-content h2 {
+  font-size: 1.4rem;
+  margin: 0;
+  color: #f4a261;
+}
+
+.stat-content p {
+  font-size: 1rem;
+  color: #dcdcdc;
+  margin-top: 5px;
+  line-height: 1.6;
+}
+
+/* 投资机会 */
+.investment-opportunities {
+  margin-top: 60px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.investment-opportunities h2 {
+  font-size: 2rem;
+  color: #f4a261;
+}
+
+.opportunity-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.opportunity-list li {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #ffffff;
+}
+
+/* 融资计划 */
+.funding-plan {
+  margin-top: 50px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.funding-plan h2 {
+  font-size: 2rem;
+  color: #f4a261;
+}
+
+.funding-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.funding-table th, .funding-table td {
+  padding: 12px;
+  border: 1px solid white;
+  text-align: center;
+}
+
+.funding-table th {
+  background-color: #f4a261;
+  color: black;
+}
+
+.funding-table td {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.team-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #f4a261;
+}
+
+.team-container {
+  text-align: center;
+  padding: 60px;
+  background: linear-gradient(180deg, #1b1c1f, #282a36);
+  color: white;
+}
+
+/* 团队部分 */
+.team-section {
+  margin-top: 40px;
+}
+
+.team-section h2 {
+  color: #f4a261;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+/* 团队成员排版 */
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* 团队卡片 */
+.team-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  width: 360px;
+  text-align: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.team-card:hover {
+  transform: scale(1.03);
+}
+
+/* 让名字和链接更显眼 */
+.team-card h3 a {
+  color: #f4a261;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.team-card p {
+  font-size: 1rem;
+  margin: 5px 0;
+  color: #dcdcdc;
+}
+
+/* Footer Styles */
+.footer {
+  background: #1b1c1f;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.footer-content p {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+.footer-content a {
+  color: #f4a261;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
+}
+
+.footer-copy {
+  font-size: 0.9rem;
+  margin-top: 10px;
+  opacity: 0.7;
+}
+
