@@ -454,66 +454,6 @@ h1 {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.team-title {
-  font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-  color: #f4a261;
-}
-
-.team-container {
-  text-align: center;
-  padding: 60px;
-  background: linear-gradient(180deg, #1b1c1f, #282a36);
-  color: white;
-}
-
-/* 团队部分 */
-.team-section {
-  margin-top: 40px;
-}
-
-.team-section h2 {
-  color: #f4a261;
-  margin-bottom: 20px;
-  font-size: 1.5rem;
-}
-
-/* 团队成员排版 */
-.team-members {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-/* 团队卡片 */
-.team-card {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 15px;
-  border-radius: 10px;
-  width: 360px;
-  text-align: left;
-  transition: transform 0.3s ease-in-out;
-}
-
-.team-card:hover {
-  transform: scale(1.03);
-}
-
-/* 让名字和链接更显眼 */
-.team-card h3 a {
-  color: #f4a261;
-  text-decoration: underline;
-  font-weight: bold;
-}
-
-.team-card p {
-  font-size: 1rem;
-  margin: 5px 0;
-  color: #dcdcdc;
-}
-
 /* Footer Styles */
 .footer {
   background: #1b1c1f;

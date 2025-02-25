@@ -39,11 +39,6 @@ export default function Navbar() {
                     </Link>
                 </li>
                 <li>
-                    <Link href="/team" className={pathname === "/team" ? "active" : ""}>
-                        Team
-                    </Link>
-                </li>
-                <li>
                     <Link href="/partnerships" className={pathname === "/partnerships" ? "active" : ""}>
                         Partnerships
                     </Link>
