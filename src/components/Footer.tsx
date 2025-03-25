@@ -3,9 +3,8 @@ export default function Footer() {
         <footer className="footer">
             <div className="footer-content">
                 <p>CONTACT US</p>
-                <p>Email: <a href="mailto:qiongxiuli@outlook.com">qiongxiuli@outlook.com</a></p>
-                <p><a href="mailto:xiaoli.cst@gmail.com">xiaoli.cst@gmail.com</a></p>
-                <p><a href="mailto:hongyang.li1996@outlook">hongyang.li1996@outlook</a></p>
+                <p>如有合作或投资意向，请通过以下方式联系我们</p>
+                <p>Email: <a href="mailto:info@secrova.com">info@secrova.com</a></p>
             </div>
             <p className="footer-copy">© 2025 Secrova. All rights reserved.</p>
         </footer>

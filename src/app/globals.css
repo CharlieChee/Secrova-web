@@ -128,7 +128,7 @@ h1 {
 
 /* Subtext Styling */
 .subtext {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 400;
   max-width: 60%;
   line-height: 1.6;
@@ -254,7 +254,7 @@ h1 {
 
 /* 技术卡片 */
 .tech-card {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.5);
   padding: 20px;
   border-radius: 12px;
   width: 320px;
@@ -294,12 +294,25 @@ h1 {
   line-height: 1.6;
 }
 
+/* 技术平台 */
+.tech-platform{
+  margin-top: 60px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.tech-platform h2 {
+  font-size: 2rem;
+  color: #f4a261;
+}
+
 
 /* 技术优势 */
 .tech-advantage {
   margin-top: 60px;
   padding: 20px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
 }
 

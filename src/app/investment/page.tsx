@@ -50,19 +50,24 @@ export default function Investment() {
                     </thead>
                     <tbody>
                     <tr>
+                        <td>种子轮</td>
+                        <td>1000 万人民币</td>
+                        <td>完成产品的初步验证</td>
+                    </tr>
+                    <tr>
                         <td>天使轮</td>
-                        <td>$100 万美元</td>
-                        <td>股权 14%</td>
+                        <td>3000 万人民币</td>
+                        <td>签约标杆客户 & 完成联合研发验证 & 初步实现商业闭环</td>
                     </tr>
                     <tr>
                         <td>Pre-A 轮</td>
-                        <td>$150-300 万美元</td>
-                        <td>市场扩展 & 商业化</td>
+                        <td>5000 万人民币</td>
+                        <td>扩展合作伙伴 & 完善产品标准化与规模复制</td>
                     </tr>
                     <tr>
                         <td>A 轮</td>
-                        <td>$2000-3000 万美元</td>
-                        <td>全球市场扩张</td>
+                        <td>1 亿人民币</td>
+                        <td>全球市场拓展 & 打造行业标准 & 形成生态闭环</td>
                     </tr>
                     </tbody>
                 </table>
@@ -73,7 +78,7 @@ export default function Investment() {
                 <h2>为什么投资 Secrova？</h2>
                 <ul className="opportunity-list">
                     <li>全球 AI 安全市场龙头，领先技术布局</li>
-                    <li>采用RISC-V AI 安全芯片，硬件级加密</li>
+                    <li>基于芯片级协同增强的 AI 系统安全解决方案</li>
                     <li>符合GDPR、CCPA、国密标准，全球市场准入</li>
                     <li>通过 AI 隐私计算，赋能金融、医疗、政府等行业</li>
                 </ul>

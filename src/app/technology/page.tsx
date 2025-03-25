@@ -42,6 +42,20 @@ export default function Technology() {
                     </div>
                 </div>
 
+                {/* Secrova 的 SecurePlatform */}
+            <section className="tech-platform">
+                <h2> Secrova产品体系</h2>
+                <ul className="advantage-list">
+                    <li>Secrova产品体系以系统级安全防范为核心，从芯片层出发，通过 AI 指令集优化与加密技术，向数据和模型层扩展，实现全面协同防护</li>
+                </ul>
+                <ul className="advantage-list">
+                    <li>SecureCore - 处理器安全加速</li>
+                    <li>SecureGuard - 数据层隐私计算</li>
+                    <li>SecureModel - 模型层防御体系</li>
+                    <li>SecurePlatform - 一站式 AI 安全平台</li>
+                </ul>
+            </section>
+
                 {/* Secrova 的技术优势 */}
             <section className="tech-advantage">
                 <h2> Secrova 的技术优势</h2>
